@@ -1,0 +1,625 @@
+/*Подключение шрифта*/
+@font-face {
+    font-family: "Exo2-Regular";
+    src: url("Exo2-Regular.ttf");
+}
+
+/*Настройка для всей страницы*/
+*{
+    font-family: "Exo2-Regular";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Общие настройки элементов*/
+.wrapper{
+    padding: 1% 0;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+    overflow: hidden;
+}
+h1{
+    font-size: 72pt;
+}
+h2{
+    font-size: 48pt;
+}
+h3{
+    font-size: 28pt;
+}
+button{
+    font-size: 28pt;
+    padding: 1%;
+    border-radius: 16px;
+    border: 1px solid #2d6a4f;
+    background-color: #52b788;
+    color: white;
+    cursor: pointer;
+}
+/*Настройка шапки*/
+header{
+    background-color: #40916C;
+    color: white;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header img{
+    height: 69px;
+}
+header div.content{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header li{
+    padding: 25px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+/*Настройка баннера слайдера*/
+.banner .content{
+    padding: 0;
+}
+
+.banner img{
+    height: 500px;
+}
+.banner button{
+    width: 60%;
+}
+/*Настройка Быстрый поиск животного*/
+.fastsearch{
+    background-image: url("../media/background.png");
+    background-size: cover;
+}
+.fastsearch .content{
+    margin: 125px auto;
+}
+.fastsearch h2{
+    margin-bottom: 40px;
+}
+.fastsearch input[type=text]{
+    font-size: 28pt;
+    padding: 1%;
+    border-radius: 16px;
+    border: 1px solid #2d6a4f;
+    color: black;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.fastsearch button{
+    width: 60%;
+}
+/*Настройка фактов о компании*/
+.cards{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 300px;
+}
+.card img{
+    margin-bottom: 10px;
+}
+.card p{
+    font-size: 18pt;
+}
+/*Настройка найденных животных*/
+.ident{
+    display: flex;
+    justify-content: space-between;
+    line-height: 28pt;
+}
+.ident2{
+    display: flex;
+    justify-content: space-between;
+    line-height: 10pt;
+}
+.ident3{
+    display: flex;
+    justify-content: space-between;
+    line-height: 28pt;
+    color: rgba(0,0,0, 0.6);
+}
+.found{
+    border: 1px solid #2d6a4f;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: white;
+}
+.found img{
+    padding-bottom: 20px;
+}
+.find{
+    background-color: #52b788;
+    margin-top: 50px;
+    }
+.find h2{
+    padding: 25px;
+    color: white;
+} 
+
+
+/*Настройка расширенный поиск*/
+.fullsearch input[type=text]{
+    font-size: 24pt;
+    padding: 1%;
+    border-radius: 16px;
+    border: 1px solid #2d6a4f;
+    color: black;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.fullsearch button{
+        width: 60%;
+        font-size: 24pt;
+}
+.fullsearch h2{
+    margin-bottom: 30px;
+    padding: 25px;
+}
+.fullsearch{
+        background-image: url("../media/background.png");
+        background-size: cover;
+}
+/*Настройка блока отзыва*/
+.comment{
+    width: 60%;
+    padding: 1%;
+    margin: 0 auto;
+    border: 1px solid #2d6a4f;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: white;
+}
+.comments img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50px;
+    padding: 20px;
+}
+.comment h4{
+    text-align: left;
+    padding-top: 20px;
+}
+.points{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 160px;
+    align-items: center;
+}
+.point{
+    background-color: rgba(0,0,0, 0.2);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.point2{
+    background-color: rgba(0,0,0, 0.3);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+}
+.comments{
+    background-color: #52b788;
+    margin-top: 50px;
+}
+.comments h2{
+    color: white;
+}
+
+/*Настройка блока подписка*/
+.sub h2{
+    padding-bottom: 40px;
+}
+.sub input[type=text]{
+    font-size: 24pt;
+    padding: 1%;
+    border-radius: 16px;
+    border: 1px solid #2d6a4f;
+    color: black;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.sub button{
+        width: 60%;
+        font-size: 24pt;
+}
+.sub{
+    padding-bottom: 40px;
+}
+
+/*Настройка подвал*/
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+footer li{
+    padding: 25px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    background-color: #40916C;
+    color: white;
+    padding-top: 25px;
+}
+
+/*Страница входа в личный кабинет*/
+ input[type=password], input[type=email],  input[type=text] {
+        font-size: 24pt;
+        padding: 1%;
+        border-radius: 16px;
+        border: 1px solid #2d6a4f;
+        color: black;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .login button{
+        width: 60%;
+        font-size: 24pt;
+        margin-bottom: 20px;
+    }
+    .butonactiv{
+        color: black;
+        background-color: white;
+    }
+    .login h2{
+        padding-bottom: 35px;
+    }
+
+    /*Страница регистрации*/
+    .login p{
+        font-size: 16pt;
+        margin-bottom: 30px;
+    }
+    .login input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+    }
+    /*Страница карточки животного*/
+    .petimg {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    .petimg img{
+        width: 200px;
+    }
+    .petcard{
+        width: 65%;
+        margin: 20px auto;
+        border: 1px solid #2d6a4f;
+        border-radius: 16px;
+        padding: 2%;
+    }
+    .petcard table{
+        width: 100%;
+        line-height: 26pt;
+        text-align: left;
+    }
+    .petcard th, td{
+        border-bottom: 1px solid rgba(0,0,0, 0.3);
+    }
+
+    /*Страница личного кабинета*/
+    .prof{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        border: 1px solid #2d6a4f;
+        border-radius: 32px;
+        padding: 3%;
+        box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.5);
+        margin-bottom: 20px;
+    }
+    .profimg img{
+        border-radius: 50%;
+        width: 300px;
+    }
+    .prof table{
+        text-align: left;
+        font-size: 14pt;
+        width: 60%;
+        line-height: 24pt;
+    }
+    .prof button{
+        font-size: 14pt;
+        padding: 6%;
+        width: 100%;
+        margin-bottom: 21px;
+    }
+    .desk .cards{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .desk .found{
+        margin-right: 30px;
+        width: 350px;
+    }
+    .desk{
+        margin-top: 20px;
+        border: 1px solid #2d6a4f;
+        border-radius: 32px;
+        padding: 3%;
+        box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.5);
+        margin-bottom: 50px;
+    }
+    .desk h3{
+        text-align: left;
+    }
+    .title1{
+        background-color: #52b788;
+        color: white;
+        padding: 2%;
+        border-radius: 20px;
+    }
+    .desk .ident2{
+        line-height: 20pt;
+    }
+    .desk button{
+        font-size: 16pt;
+        padding: 3%;
+    }
+    .dopinfo{
+        background-color: rgba(0,0,0, 0.1);
+        padding: 2%;
+        border-radius: 8px;
+        width: 100%;
+        color: black;
+        text-align: left;
+        word-break: keep-all;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        line-height: 17pt;
+    }
+    .title2{
+        background-color: #ffc971;
+        color: white;
+        padding: 2%;
+        border-radius: 20px;
+    }
+    .title3{
+        background-color: #64dfdf;
+        color: white;
+        padding: 2%;
+        border-radius: 20px;
+    }
+    .title4{
+        background-color: rgba(0,0,0, 0.3);
+        color: white;
+        padding: 2%;
+        border-radius: 20px;
+    }
+
+    /*Страница добавления животного*/
+ 
+    .add h2{
+            margin-bottom: 20px;
+    }
+    .addcontent{
+        background-color: rgba(0,0,0, 0.1);
+        border-radius: 32px;
+        padding: 2%;
+    }
+    .addcontent button{
+        width: 100%;
+    }
+    .addcontent p{
+        font-size: 20pt;
+        line-height: 20pt;
+    }
+    .addcontent input[type="text"], input[type="password"]{
+        font-size: 20pt;
+    }
+    .addcontent .ident2{
+        border-bottom: 1px solid rgba(0,0,0, 0.2);
+        margin: 20px 0;
+        padding: 1%;
+    }
+    .addcontent input[type=file]{
+        margin-bottom: 15px;
+        font-size: 20pt;
+    }
+    .addcontent input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+    .addcontent input[type=date]{
+        font-size: 20pt;
+        border: 1px solid #2d6a4f;
+        border-radius: 16px;
+        width: 60%;
+        padding: 1%;
+        margin-bottom: 20px;
+    }
+    .sogl{
+        text-align: left;
+        margin: 40px;
+    }
+    #malreg{
+        display: none;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .sozd{
+        font-size: 16pt;
+    }
+    .sozd input[type=checkbox]:checked~.remove-check{
+        display: none;
+    }
+    .sozd input[type=checkbox]:checked~#malreg{
+        display: block;
+    }
+    .sogl1{
+        text-align: left;
+        margin: 40px;
+        font-size: 20pt;
+    }
+
+      /*Страница кабинета модератора*/
+    .basa{
+        background-color: rgba(0,0,0, 0.1);
+        border-radius: 32px;
+        padding: 2%;
+        margin: 20px 0;
+    }
+    .basa table img{
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+    }
+    .basa table th, td{
+        padding: 10px 10px;
+    }
+    .sort{
+        text-align: right;
+        opacity: 50%;
+    }
+    .basa table{
+        margin-bottom: 20px;
+    }
+    .basa select{
+        padding: 1%;
+        border-radius: 8px;
+    }
+
+    /*Страница результата поиска*/
+    .pages a{
+        text-decoration: none;
+        color: rgba(0,0,0, 0.8);
+        padding: 4px 8px;
+        font-size: 14pt;
+    }
+    .pagenumber{
+        background-color: rgba(0,0,0, 0.1);
+        border-radius: 2px;
+    }
+
+    /*Настройка мобильной версии*/
+    @media screen and (max-width: 768px) {
+
+    /*Настройка шапки*/
+        header li{
+            padding: 12px;
+        }
+    /*Настройка подвала*/
+        footer .content{
+            width: 95%;
+        }
+        footer .content li{
+            padding: 15px;
+            font-size: 11pt;
+        }
+    /*Настройка главной страницы*/
+        .banner img{
+            width: 100%;
+            height: auto;
+        }
+        .card{
+            width: 150px;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card p{
+            font-size: 14pt;
+        }
+
+      .found{
+        width: 32%;
+        font-size: 10pt
+      }  
+      .found img{
+        width: 100%;
+      }
+      .find .content{
+        width: 95%;
+      }
+
+      .comment{
+        width: 100%;
+      }
+
+     /*Настройка личного кабинета*/ 
+
+      .profile .content{
+        width: 95%;
+     }
+      .profimg img{
+        width: 250px;
+      }
+      .prof button{
+        font-size: 10pt;
+        padding: 6px;
+      }
+      .prof table{
+        font-size: 10pt;
+        line-height: 18pt;
+      }
+
+
+      /*Настройка страницы добавления нового животного*/ 
+      .addcontent .ident2 input{
+        width: 60%;
+        font-size: 13pt;
+      }
+      .addcontent p{
+        font-size: 13pt;
+        text-align: left;
+      }
+      .addcontent .ident2 p{
+        width: 40%;
+      }
+
+      /*Настройка страницы карточки животного животного*/ 
+      .petinfo .content{
+        width: 95%;
+      }
+      .petcard{
+        width: 90%;
+      }
+
+       /*Настройка кабинета модератора*/ 
+    .orders .content{
+        width: 100%;
+    }
+    .orders table{
+        font-size: 10pt;
+    }
+    .basa table th, td{
+        padding: 10px 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+        
+       
